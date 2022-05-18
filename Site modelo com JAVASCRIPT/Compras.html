@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>AD1 CPW Questão 04</title>
+    <base target="blank" />
+    <link rel="stylesheet" type="text/css" href="PakiMemo.css" />
+    <link href="https: //fonts.googleapis.com/css2? family= Lora & family= Rubik & display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <adress class="ender">
+            Rua do Paço do Elefantinho, 123
+            <br />
+            Tel: (21) 4321-5678
+            <br />
+            <a href="mainto:contato@paquiderme.com.br"><u>contato@paquiderme.com.br</u></a>
+        </adress>
+        <img class="imgLogo" src="./img/PakiLogoTopo.png" /><br />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="PakiMemo.html">INICIAL</a></li><br>
+            <li><a href="Memorias.html">MEMÓRIAS</a></li><br>
+            <li><a href="Discos.html">HDs / SSDs</a></li><br>
+            <li><a href="Cadastro.html">CADASTRO</a></li><br>
+            <li><a href="Compras.html">COMPRAS</a></li><br>
+        </ul>
+    </nav>
+    <section>
+        <form class="FormBox" method="post">
+            <h3>Compras</h3>
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsq">
+                        <label class="LabBox" for="idEmail" id="loginCad">E-mail:
+                            <input id="idEmail" type="email" name="TextoEmail" required />
+                        </label>
+                    </div>
+                    <div class="ColDir">
+                        <label class="LabBox" for="idSenha" id="senhaCad">Senha:
+                            <input id="idSenha" class="InpBoxMed" type="password" name="TextoSenha" required></input>
+                        </label>
+                    </div>
+                </div>
+                <i>Se você ainda não tem cadastro clique <a href="Cadastro.html">aqui</a>!</i>
+            </fieldset>
+            <fieldset class="FSLinhaInteira">
+                <legend>Lista de Compras</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsq" id="lisSelProd">
+                        <label id="lisSelProd">Produtos:
+                            <select size="1" type="select" id="selProduto" name="ListaProdutos" >
+                    </div>
+                    <option value="0">----</option>
+                    <optgroup label="Memória DDR3">
+                        <option value="290">Kingston 4Gb</option>
+                        <option value="190">Samsung 8Gb</option>
+                    </optgroup>
+                    <optgroup label="Memória DDR4">
+                        <option value="298">Kigston Fury 8Gb</option>
+                        <option value="245">Corsair Vengeance 8Gb</option>
+                    </optgroup>
+                    <optgroup label="HD Sata III">
+                        <option value="170">Western Digital 500 Gb</option>
+                        <optio value="350">Seagate 1 Tb</option>
+                    </optgroup>
+                    <optgroup label="SSD Sata III">
+                        <option value="380">Samdisk 480 Gb</option>
+                        <option value="700">Kingston 960 Gb</option>
+                    </optgroup>
+                    <optgroup label="SSD M2">
+                        <option value="410">Kingston 500 Gb</option>
+                        <option value="270">Western Digital 240 Gb</option>
+                    </optgroup>
+                    </select>
+                </div>
+                <span class="ColDir" id="btnIncluir">
+                    <input type="button" value="Incluir" onClick="compra();" />
+                </span>
+                </div>
+                <div class="linhaForm" id="boxPedidos">
+                    <label id="boxPedidos">
+                        <textarea name="TextoEnd" rows="2" id="lisPedArea"></textarea>
+                    </label>
+                </div>
+                <div class="ColEsq"></div>
+                <label class="ColDir">Valor: R$
+                    <input type="text" class="InpBoxMed" name="TextoValor" />
+                </label>
+                </div>
+            </fieldset>
+            <fieldset class="FSLinhaInteira">
+                <legend>Dados do Cartão</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsq">
+                        <div id="numCartao">
+                            <label>Número:
+                                <input class="numDD" type="text" name="Cx1" maxlength="4" />&nbsp;
+                                <input class="numDD" type="text" name="Cx2" maxlength="4" />&nbsp;
+                                <input class="numDD" type="text" name="Cx3" maxlength="4" />&nbsp;
+                                <input class="numDD" type="text" name="Cx4" maxlength="4" />&nbsp;
+                            </label>
+                        </div>
+                        <div id="valCartao">
+                            <label>Validade:
+                                <input class="numDD" type="number" name="TextoMesVal" min="1" max="12" class="numDD" />
+                                /
+                                <input class="numQD" type="number" name="TextoAnoVal" value="2022" min="2010" max="2022"
+                                    class="numQD"></input>
+                            </label>
+                        </div>
+                        <div id="boxParcel">
+                            <label>Parcelas
+                                <input class="numDD" type="number" name="TextoMesVal" min="1" max="12" id="numDD" />
+                                x Sem Juros
+                            </label>
+                        </div>
+                    </div>
+                    <fieldset class="FSColDir" id="fsBandeira">
+                        <legend>Bandeira:</legend>
+                        <div>
+                            <input type="radio" name="bandeira" value="Visa" checked />Visa
+                        </div>
+                        <div>
+                            <input type="radio" name="bandeira" value="Master" />Master
+                        </div>
+                        <div>
+                            <input type="radio" name="bandeira" value="Elo" />Elo
+                        </div>
+                    </fieldset>
+            </fieldset>
+            <div class="botoes">
+                <input type="submit" value="Confirmar" />
+                <input type="reset" value="Limpar" />
+            </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+<script src="./Compras.js"></script>
+</html>

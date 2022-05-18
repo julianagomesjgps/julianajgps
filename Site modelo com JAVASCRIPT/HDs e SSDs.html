@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>AD1 CPW Questão 02</title>
+    <base target="blank" />
+    <link rel="stylesheet" type="text/css" href="PakiMemo.css" />
+    <link href="https: //fonts.googleapis.com/css2? family= Lora & family= Rubik & display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <adress class="ender">
+            Rua do Paço do Elefantinho, 123
+            <br />
+            Tel: (21) 4321-5678
+            <br />
+            <a href="mainto:contato@paquiderme.com.br"><u>contato@paquiderme.com.br</u></a>
+        </adress>
+        <img class="imgLogo" src="./Imagens/PakiLogoTopo.png" /><br />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="PakiMemo.html">INICIAL</a></li><br>
+            <li><a href="Memorias.html">MEMÓRIAS</a></li><br>
+            <li><a href="Discos.html">HDs / SSDs</a></li><br>
+            <li><a href="Cadastro.html">CADASTRO</a></li><br>
+            <li><a href="Compras.html">COMPRAS</a></li><br>
+        </ul>
+    </nav>
+    <section>
+        <table class="tabDisco">
+            <thead>
+                <tr>
+                    <th colspan="5" class="titulo"> HDs e SSDs Internos</th>
+                </tr>
+                <tr>
+                    <th class="linTH">Tipo/Interface</th>
+                    <th class="linTH">Fabricante</th>
+                    <th class="linTH">Descriçao</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2" class="colTH">HD Sata III</th>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(0, 1);" onclick="mostra(0,1)" >Western Digital</a></td>
+                    <td class="janInfoImg" rowspan="6">
+                        <h2 id="titDes"></h2>
+                        <img id="imgDes" src="Imagens/vazio.jpg">
+                        <div id="prcDes"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(0, 2);" onclick="mostra(0,2)">Seagate</a></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="colTH">SSD Sata III</th>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(1, 3);" onclick="mostra(1,3)"> Samdisk</a></td>
+                </tr>
+                <tr>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(1, 4);" onclick="mostra(1,4)"> Kingston</a></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="colTH">SSD M2</th>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(2, 5);" onclick="mostra(2,5)";>Kingston</a></td>
+                </tr>
+                <tr>
+                    <td class="colMenu"><a target="_self" href= "javascript:Mostra(2, 6);" onclick="mostra(2,6)"> WesternDigital</a></td>
+                </tr>
+            </tr>
+        </table>
+    </section>
+</body>
+<script src="./HDs e SSDs.js"></script>
+
+</html>
